@@ -1,0 +1,6 @@
+Educoder | Rails Tutorial
+
+<%= @user.name %>
+
+点击或复制下面的链接，快速激活您的账户
+<%= edit_account_activation_url(@user.activation_token, email: @user.email) %>

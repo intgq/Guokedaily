@@ -1,0 +1,9 @@
+<%= form_for(@micropost) do |f| %>
+  <div class="field">
+    <%= f.text_area :content, placeholder: "发布一条新微博吧..." %>
+  </div>
+  <%= f.submit "发布", class: "btn btn-primary" %>
+  <span class="picture">
+    <%= f.file_field :picture, accept: 'image/jpeg,image/gif,image/png' %>
+  </span>
+<% end %>
